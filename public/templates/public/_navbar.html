@@ -1,0 +1,143 @@
+<!-- #component:public/navbar:start -->
+{% load static %}
+<header class="main-header">
+
+    <!-- Header Upper -->
+    <div class="header-upper">
+        <div class="inner-container">
+            <div class="auto-container clearfix">
+                <div class="logo-outer">
+                    <div class="logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'images/logo-small.png' %}" alt="" title="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                   <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="navbar-header">
+                            <!-- Togg le Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon flaticon-menu-button"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+
+                                <li class="dropdown"><a href="{% url 'home' %}">Risk Ratings</a>
+                                   <ul>
+                                    <li><a href="{% url 'account_signup' %}">Get your FREE rating</a></li>
+                                    <li><a href="{% url 'about-ratings' %}">About Ratings</a></li>
+                                    <li><a href="{% url 'remediation-reports' %}">Remediation Reports</a></li>
+                                    <li><a href="{% url 'industry-uses' %}">Industry Uses</a></li>
+                                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+
+                                   </ul>
+                                </li>
+                                <li class="">
+                                <a href="{% url 'security-starter' %}">Security Starter Pack</a>
+                            </li>
+                               <li><a href="{% url 'security-training' %}">Staff Training</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)">Services</a>
+                                    <ul>
+                                       <li><a href="{% url 'consultancy' %}">Security Guidance</a></li>
+                                        <li><a href="{% url 'threat-assessment' %}">Full Threat Assessments</a></li>
+
+                                        <li><a href="{% url 'security-phishing' %}">Phishing Defence</a></li>
+
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+
+                    <!-- Main Menu End-->
+                    <div class="outer-box clearfix">
+                        {% if request.user.is_anonymous %}
+                            <!-- Button Box -->
+                            <div class="btn-box">
+                                <a href="{% url 'account_login' %}" class="theme-btn btn-style-five text-white" style="margin-left:10px;">Login</a>
+                            </div>
+                            <div class="btn-box" >
+                                <a href="{% url 'account_signup' %}" class="theme-btn btn-style-one text-white">Sign Up</a>
+                            </div>
+                        {% else %}
+                            <div class="btn-box">
+                                <a href="{% url 'dashboard' %}" class="theme-btn btn-style-five text-white" style="margin-left:10px;">Dashboard</a>
+                            </div>
+                            {% if request.user.profile.on_trial_or_free_account %}
+                                <div class="btn-box">
+                                    <a href="{% url 'subscribe' %}" class="theme-btn btn-style-one text-white" style="margin-left:10px;">Upgrade</a>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header Upper-->
+
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'images/logo-small.png' %}" alt="" title="">
+                </a>
+            </div>
+            <!--Right Col-->
+            <div class="pull-right">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-collapse show collapse clearfix">
+                        <ul class="navigation clearfix" id="nav">
+                            <li ><a href="{% url 'home' %}">Home</a></li>
+                            <li class="dropdown"><a href="javascript:void(0)">Security &amp; Trust Ratings</a>
+                                 <ul>
+                                        <li><a href="{% url 'account_signup' %}">Get your FREE rating</a></li>
+                                        <li><a href="{% url 'about-ratings' %}">About Ratings</a></li>
+                                        <li><a href="{% url 'remediation-reports' %}">Remediation Reports</a></li>
+                                        <li><a href="{% url 'security-starter' %}">Security Starter Pack</a></li>
+                                        <li><a href="{% url 'industry-uses' %}">Industry Uses</a></li>
+                                 </ul>
+                            </li>
+                            <li class="dropdown"><a href="javascript:void(0)">Services</a>
+                                <ul>
+
+                                    <li><a href="{% url 'security-training' %}">Staff Security Training</a></li>
+                                    <li><a href="{% url 'threat-assessment' %}">Full Threat Assessments</a></li>
+                                </ul>
+                            </li>
+
+                            <li class=""><a href="{% url 'account_signup' %}">Pricing</a></li>
+
+                            {% if request.user.is_anonymous %}
+                                <li><a href="{% url 'account_login' %}">Login</a></li>
+                                <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+                            {% else %}
+                            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                                {% if request.user.profile.on_trial_or_free_account %}
+                                <li><a href="{% url 'subscribe' %}">Upgrade</a></li>
+                                {% endif %}
+                            {% endif %}
+                        </ul>
+                    </div>
+                </nav><!-- Main Menu End-->
+            </div>
+        </div>
+    </div><!-- End Sticky Menu -->
+
+
+</header>
+<!-- #component:public/navbar:end -->

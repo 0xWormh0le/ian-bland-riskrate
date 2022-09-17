@@ -1,0 +1,110 @@
+{% extends "public/base.html" %}
+
+{% block page_content %}
+<!--Page Title-->
+<section class="page-title">
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Industry Uses</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about-ratings' %}">Security &amp; Trust Ratings</a></li>
+                <li>Industry Uses</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- Sidebar Page Container -->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row">
+            <div class="content-side order-2 col-lg-8 col-md-12 col-sm-12">
+                <div class="service-detail">
+
+                    <div class="content-box" style="padding-top:0">
+                        <h2>Industry Uses</h2>
+                        <p><strong>Cyber Security &amp; Digital Trust bulk assessments.</strong></p>
+
+                        <h5 class="feature-block-h">Vendor Risk Management </h5>
+
+                        <p>Some of the most devastating breaches in the past few years have been rooted in the security
+                            weaknesses of third parties, and in fact, hackers themselves admit that contractors are
+                            often their primary target. </p>
+
+                        <p>Ratings allow companies to quickly and cost effectively analyse and monitor the security
+                            posture of multiple vendors and partners to reduce their own risk profile and enhance
+                            compliance.</p>
+
+                        <p>Based on verifiable data they are an improvement on, or add tremendous value to, self report
+                            security questionnaires currently used when assessing third party risk.</p>
+
+                        <p>They allow an organisation to get an immediate profile of a third party, improving the time
+                            and reducing the resources involved in doing so.</p>
+
+                        <p>Additionally an enterprise account allows an organisation to provide security resources to
+                            third parties to help them achieve security compliance. </p>
+
+                            <hr>
+
+                            <h4 style="font-weight:200;"><i>Many smaller businesses that are part of a larger supply chain don't have the knowledge or resources to implement cyber security initiatives. We provide everything a business might need to meet enterprise level compliance, risk management and IT assurance programmes. <br><br>An easy to follow Cyber Security Action Plan saves time, saves money and quickly plugs security gaps in your digital eco-sphere. </i>  </h4>
+
+                            <hr>
+
+
+                        <h5 class="feature-block-h mt-5">Cyber Insurance Providers </h5>
+
+
+                        <p>Long reliant on self report questionnaires insurance providers can now assess the risk of
+                            prospective customers using tangible, transparent and verifiable data. Data that provides an
+                            insight to risk from some of the most common and easily executed cyber crimes. </p>
+
+
+                        <p>Insurers can monitor a company&#39s rating for the duration of a policy to ensure compliance
+                            to
+                            security standards and flag any vulnerabilities or malware infections.</p>
+
+
+                        <p>Not only does this improve cyber risk assessment it allows an insurer to provide remediation
+                            to a customer and access to cyber security resources. This improves a customer&#39;s
+                            security
+                            profile, reducing the chance of a policy claim. </p>
+
+
+                        <h5 class="feature-block-h">Security Research - Institutional Use </h5>
+
+                        <p>With the ability to cost effectively scan thousands of domains, Government Agencies and
+                            institutional Security Researchers can analyse organisations, industries and government
+                            assets on a large-scale.</p>
+
+                        <p>Reports and remediation provide data that is inline with the requirements from:</p>
+
+                        <p>
+                            Binding Operational Directive 18-01 - Enhance Email and Web Security<br> Department of
+                            Homeland Security, USA
+                        </p>
+                        <p>Government technology standards and guidance<br>Government Digital Service, UK</p>
+
+                        <hr>
+
+                        <h5 class="feature-block-h">Find out more</h5>
+
+                        <p>Contact us to find out more about our Enterprise Plans. Pricing is based on usage requirements.</p>
+
+                        <div class="content-box text-center">
+
+                            <div class="btn-box">
+                                <a href="{% url 'contact' %}" class="theme-btn btn-style-one">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include "public/_security_ratings_sidebar.html" %}
+        </div>
+    </div>
+</div>
+<!--End Sidebar Page Container -->
+{% endblock page_content %}

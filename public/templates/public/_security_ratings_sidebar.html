@@ -1,0 +1,97 @@
+<!-- #component:public/secsidebar:end -->
+{% load static %}
+<div class="sidebar-side col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <aside class="sidebar services-sidebar">
+        <!-- Category Widget -->
+        <div class="sidebar-widget categories">
+            <div class="sidebar-title">
+                <h5>Security & Trust Ratings</h5>
+            </div>
+            <div class="widget-content">
+                <ul class="category-list">
+                    <li>
+                        <a href="{% url 'about-ratings' %}">
+                            <i class="icon mdi mdi-gauge"></i>
+                            What Are They
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'remediation-reports' %}">
+                            <i class="icon mdi mdi-book-open-variant"></i>
+                            Remediation Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'industry-uses' %}">
+                            <i class="icon mdi mdi-security"></i>
+                            <u>Security Starter Pack</u>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'industry-uses' %}">
+                            <i class="icon mdi mdi-laptop-mac"></i>
+                            Industry Uses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'industry-uses' %}">
+                            <i class="icon mdi mdi-currency-usd"></i>
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar-widget categories">
+            <div class="sidebar-title">
+                <h5>Security Services</h5>
+            </div>
+            <div class="widget-content">
+                <ul class="category-list">
+                    <li>
+                        <a href="{% url 'consultancy' %}">
+                            <i class="icon mdi mdi-server-security"></i>
+                            Security Consulting
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'threat-assessment' %}">
+                            <i class="icon mdi mdi-fingerprint"></i>
+                            Threat Assessments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'security-training' %}">
+                            <i class="icon mdi mdi-presentation"></i>
+                            Staff Training
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'security-phishing' %}">
+                            <i class="icon mdi mdi-fish"></i>
+                            Phishing Defence
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar-widget support-widget">
+            <div class="widget-content">
+                <div class="text text-white">Cyber Security <br> Starter Pack</div>
+                <div class="number text-white">Go from zero, to security hero</div>
+                <a href="{% url 'security-starter' %}" class="read-more">Get Secure Today!! </a>
+            </div>
+        </div>
+
+
+        <div class="sidebar-widget message-widget">
+            <div class="widget-content" style="background-image: url(/static/images/resource/message-bg.jpg);">
+                <h4>Our Team of Experts are here to Help</h4>
+                <a href="{% url 'consultancy' %}" class="read-more">Read more <i class="fa fa-caret-right"></i></a>
+            </div>
+        </div>
+    </aside>
+</div>
+<!-- #component:public/secsidebar:end -->

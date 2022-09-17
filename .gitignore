@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+env.sh
+provisioning/hosts
+.vscode
+my.cnf
+/static
+/download/storage
+*/migrations/*
+!*/migrations/__init__.py
+!*/migrations/0001_initial.py
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+venv/
+*.pyc
+*.log
+.vagrant
+__pychache__/

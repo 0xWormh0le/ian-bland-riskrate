@@ -1,0 +1,38 @@
+{% extends "public/base.html" %}
+    {% load static %}
+
+{% block extra_css %}
+<link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plugins/revolution/css/layers.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet" type="text/css">
+{% endblock extra_css %}
+
+{% block page_content %}
+{% include "public/_index_banner.html" %}
+{% include "public/_index_intro.html" %}
+{% include "public/_index_facts.html" %}
+{% include "public/_index_about_ratings.html" %}
+{% include "public/_call_to_actions.html" %}
+{% include "public/_index_reports.html" %}
+{% include "public/_index_uses.html" %}
+{% include "public/_index_starter_pack.html" %}
+{% include "public/_contact.html" %}
+{% endblock page_content %}
+
+{% block extra_js %}
+{{ block.super }}
+<!--Revolution Slider-->
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main-slider-script.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/banner.js' %}"></script>
+{% endblock extra_js %}

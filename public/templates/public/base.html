@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta property="og:title" content="Cyber Security and Digital Risk">
+    <meta property="og:site_name" content="Risk Rate Me">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Assess the risk of your public facing IT infrastructure.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://riskrate.me">
+    <meta property="og:image:alt" content="">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    {% block extra_meta %}{% endblock extra_meta %}
+    <title>{% block head_title %}RiskRate.me - Assess the risk of your public facing IT infrastructure{% endblock head_title %}</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300%2C400%7CPassion+One:700%2C300%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+    <link href="{% static 'css/public/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'css/public/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'css/public/custom.css' %}" rel="stylesheet">
+    {% block extra_css %}{% endblock extra_css %}
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <script src="https://kit.fontawesome.com/49269685a2.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {% block extra_head_js %}{% endblock extra_head_js %}
+</head>
+<body>
+    {% block content %}
+    <div class="page-wrapper">
+        {% include "public/_navbar.html" %}
+        {% block page_content %}
+        {% endblock page_content %}
+        {% include "public/_footer.html" %}
+    </div>
+
+    {% endblock content %}
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{% static 'js/accordion.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    {% block extra_js %}{% endblock extra_js %}
+</body>
+</html>

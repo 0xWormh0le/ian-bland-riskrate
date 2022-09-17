@@ -1,0 +1,38 @@
+<form id="form-contact" action="{% url 'feedback' %}"  method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="redirect" value="{{ request.path }}" />
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="form-group">
+                <input type="text" name="name" id="form-contact-name" placeholder="Your Name*" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="form-contact-email" placeholder="Email*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" id="form-contact-phone" placeholder="Phone">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="form-group">
+                <textarea name="message" id="form-contact-message" placeholder="Message" required
+                          style="height: 200px;"></textarea>
+            </div>
+        </div>
+        </div>
+        <div class="row" style="padding-top:30px">
+        <div class="col-md-6">
+            <div class="form-group">
+                {% load widget_tweaks %}
+                {% render_field form.captcha %}
+           </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+
+            <button id="btn-contact" class="theme-btn btn-style-one text-white"
+                    type="submit">Contact Us
+            </button></div>
+        </div>
+    </div>
+</form>

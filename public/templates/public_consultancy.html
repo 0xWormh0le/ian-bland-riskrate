@@ -1,0 +1,80 @@
+{% extends "public/base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link href="{% static 'css/public/registration.css' %}" rel="stylesheet" type="text/css">
+{% endblock extra_css %}
+{% block page_content %}
+<section class="page-title" >
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Security Guidance</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="javascript:void(0)">Services</a></li>
+                <li>Security Guidance</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row">
+            <!-- #component:public/consultancy:start -->
+            <div class="content-side order-2 col-lg-8 col-md-12 col-sm-12">
+                <div class="service-detail">
+                    <div class="content-box" style="padding-top:0">
+                        <h2>Cyber Security Consultancy</h2>
+                        <p>
+                            <strong>We provide peace of mind, leaving you free to focus on growing your business, safe in the knowledge that your IT and data security are being properly managed. </strong>
+                        </p>
+                       <p>We provide a comprehensive range of cyber security and data privacy services to help you assess, build and manage your cyber security capabilities and respond to incidents. Our services are designed to help you build confidence, understand and react to threats and vulnerabilities, protect what's important and secure your environment. We advise senior management and Boards on shaping a strategic response to risk as well as providing detailed technical analysis.</p>
+                       <p>Committing to a cyber security strategy can be a daunting challenge and it can be difficult to know where to begin. If a business is not large enough to support a full-time expert, outsourcing is not only cost-effective, but it also provides access to a team of specialists that have experience with a wide variety of organisations and industries.</p>
+                       <p>As cyber threats become more high-profile and people become more aware of data privacy, organisations have an opportunity to differentiate themselves with outstanding digital trust and cyber security. They can build trust with customers and stakeholders by showing systems are secure, protect data from cyber-attack and comply with privacy regulations.</p>
+                       <p>Our experienced cyber security consultants can support your business as it makes the changes needed to implement your cyber security strategy.</p>
+
+
+
+<h3>What does a cyber security consultant do?</h3>
+
+<p>A security consultant is someone who is aware of every aspect of cybersecurity. Someone who works as a guide, an advisor, and an experienced practitioner.</p>
+<p>Just as important as their technical skills and knowledge, you need someone who understands the needs of a small business not someone who is trying to bring enterprise level cybersecurity thinking or solutions to a small business environment.</p>
+<p>Cyber security solutions cost and resource allocation depends on the type and size of an organisation. The optimal state for every company would be to get to a level of cyber-security defence in which the net benefits (benefits–costs) are maximised.</p>
+
+<p>Our services are tailored to your business and depending on the situation can inlcude:</p>
+
+<ul  class="list-stuff">
+    <li>Define, implement, and maintain security policies for  your organisation.</li>
+    <li>Conduct a top-to-bottom security review of your IT infrastructure</li>
+    <li>Recommend best practices for securing your network and encrypting your data</li>
+    <li>Provide ongoing security monitoring</li>
+    <li>Guide your internal team through the process of implementing a cyber security strategy</li>
+    <li>Identify appropriate outsourcing solutions to meet your IT security strategy</li>
+    <li>Project manage as much or as little of the IT security strategy implementation as needed</li>
+    <li>Help you respond to cyber security attacks and incidents</li>
+</ul>
+
+        <div class="register pt-5">
+            <div class="form-column">
+                <div class="inner-column">
+                    <div class="request-form">
+                        <div class="upper-box">
+                            <h3>Need more information?</h3>
+                            <div class="text">Get in touch to discuss your situation with our experts.</div>
+                        </div>
+                        {% include "./public/_contact_form.html" %}
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                </div>
+                </div>
+            </div>
+            <!-- #component:public/threat-assessment:end -->
+            {% include "public/_security_ratings_sidebar.html" %}
+        </div>
+    </div>
+</div>
+{% endblock page_content %}

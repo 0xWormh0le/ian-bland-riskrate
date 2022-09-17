@@ -1,0 +1,117 @@
+<!-- #component:public/footer:start -->
+{% load static %}
+<footer class="main-footer style-two">
+    <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="row">
+                <!--Big Column-->
+
+                        <!--Footer Column-->
+                        <div class="footer-column  col-md-3 col-sm-6">
+                            <div class="footer-widget about-widget text-center">
+                               <img src="{% static 'images/eye.svg' %}" style="width:162px; height:auto;" >
+
+                                        <a href="{% url 'home' %}">
+                                        <img src="{% static 'images/logo-text-wt.png' %}" class="mt-2">
+                                        </a>
+
+                                <div class="widget-content">
+                                    <ul class="contact-info">
+
+                                        <li><small> <SCRIPT LANGUAGE="JavaScript">
+                                        user = 'contact';
+                                        site = 'riskrate.me';
+                                        document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                        document.write(user + '@' + site + '</a>');
+                                        </SCRIPT></small> </li>
+
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Footer Column-->
+                        <div class="footer-column  col-md-3 col-sm-6">
+                            <div class="footer-widget links-widget">
+                                <h2 class="widget-title">Quick Links</h2>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                        <li><a href="javascript:void(0)">FAQ</a></li>
+                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                         <li><a href="javascript:void(0)">Terms &amp; Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-3 col-sm-6">
+                            <div class="footer-widget links-widget">
+                                <h2 class="widget-title">Our Services</h2>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                         <li><a href="{% url 'consultancy' %}">Cyber Security Consulting</a></li>
+                                         <li><a href="{% url 'threat-assessment' %}">Threat Assessments</a></li>
+                                        <li><a href="{% url 'security-phishing' %}">Phishing Simulations</a></li>
+                                        <li><a href="{% url 'consultancy' %}">Wooden Furniture</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-column col-md-3 col-sm-6">
+                            <!--Footer Column-->
+                            <div class="footer-widget popular-posts">
+                                <h2 class="widget-title">Sign Up Now!</h2>
+                                <!--Footer Column-->
+                                <div class="widget-content">
+
+                                   <div class="post">
+
+                                        <h4><a href="{% url 'security-starter' %}">Cyber Security Starter Pack</a></h4>
+                                        <span class="date">sign up now!</span>
+                                    </div>
+
+
+                                    <div class="post">
+
+                                        <h4>
+                                            <a href="{% url 'security-training' %}">Cyber Security Training</a>
+                                        </h4>
+                                        <span class="date">sign up now!</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% if messages %}
+
+{% for msg in messages %}
+{% if 'feedback_success' in msg.tags %}
+<div class="submit-feedback position-fixed" style="z-index: 999; right: 2em; top: 2em; opacity: .9; transition: opacity 3s ease">
+<div class="d-flex align-items-center bg-success text-white p-3 rounded-lg">
+    <i class="fas fa-check-circle fa-2x mr-3" aria-hidden="true"></i>
+    Feedback Submitted
+</div>
+</div>
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+<!-- #component:public/footer:end -->

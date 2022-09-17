@@ -1,0 +1,62 @@
+{% extends "public/base.html" %}
+{% load static %}
+
+{% block page_content %}
+<section class="page-title">
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Phishing Defence</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="javascript:void(0)">Services</a></li>
+                <li>Phishing Defence</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row">
+            <!-- #component:public/threat-assessment:start -->
+            <div class="content-side order-2 col-lg-8 col-md-12 col-sm-12">
+                <div class="service-detail">
+                    <div class="content-box" style="padding-top:0">
+                        <h2>Phishing Defence Training</h2>
+                        <p>
+                            <strong>Total Phishing Defence.Prevent Incidents, Protect Assets. </strong>
+                        </p>
+                        <p style="color:#398bf5">
+                            More than two thirds of organisations do not comply with Email Security Best Practices. It is no surprise then that over 91% of successful cyber attacks start with a simple phishing email. We provide a complete solution to protect your organisation from email based attacks.
+                        </p>
+
+                        <p>There is no fool proof technological defence against these attacks. Training to recognise and resist targeted social engineering scams is the single most effective defence you can deploy. Behavioural changes that improve an organisations security profile, maintain heightened employee awareness and reduce the likelihood of a successful cyber-attack are directly related to frequency of Phishing Simulations.</p>
+                        <p>Phishing simulations are a "hands on training" exercise. By conducting phishing simulations, email users can experience directly and safely how phishing attacks occur. They learn the techniques used in these social engineering scams and how to identifiy them. In doing so they become your frontline of defence and empowered to safeguard their personal information and the information of their organization.</p>
+                        <video width="100%" controls>
+                            <source src="https://darkphish.com/assets/promo.mp4" type="video/mp4">
+                            <source src="https://darkphish.com/assets/promo.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <h3 style="padding-top:30px">How Simulations Work</h3>
+                        <p>Employees receive phishing emails identical to those an attacker would use. Should they fall victim to one of these "simulated" phishing emails they are directed to a landing page that provides training on how to identify genuine phishing emails in the future. Regular simulations ensure that all employees are aware of the risks and remain vigilant against such attacks.</p>
+                        <p>Dynamically created personalised landing pages provide a superior end user experience ensuring that your employees are fully engaged. Our bespoke phishing simulation and awareness service is effective and realistic. We identify your most likely threats and execute simulations based on real world scenarios.</p>
+                        <video width="100%" controls>
+                            <source src="https://darkphish.com/assets/landing.mp4" type="video/mp4">
+                            <source src="https://darkphish.com/assets/landing.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                        <p  style="padding-top:30px">Our fully managed service is conducted by our expert team. Everything is created, ran, chased and reported on for you. All you need to do is provide us a list of your users and add our sending IP’s to your email security. We will target your organisation as would a hacker, identify your weaknesses and ensure your staff are trained to combat such attacks.</p>
+                        <p>A managed service saves your time and resources. Our professional security team constantly keep up with the latest threats and tactics used by your potential adveraries. They will efficiently target your staff and key personnel with relevant, realistic attacks ensuring your most vulnerable users become valuable assets in the defence against email based threats.</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- #component:public/threat-assessment:end -->
+            {% include "public/_security_ratings_sidebar.html" %}
+        </div>
+    </div>
+</div>
+{% endblock page_content %}

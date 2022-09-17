@@ -1,0 +1,99 @@
+{% extends "public/base.html" %}
+{% load static %}
+
+{% block page_content %}
+<section class="page-title" >
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Threat Assesments</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="javascript:void(0)">Services</a></li>
+                <li>Threat Assessments</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row">
+            <!-- #component:public/threat-assessment:start -->
+            <div class="content-side order-2 col-lg-8 col-md-12 col-sm-12">
+                <div class="service-detail">
+                    <div class="content-box" style="padding-top:0">
+                        <h2>Threat Assessments</h2>
+                        <p>
+                            <strong>Comprehensive Vulnerability Assessment and Threat Reconnaissance </strong>
+                        </p>
+                        <p>
+                            A complete and comprehensive Vulnerability and Threat Reconnaissance report covering all
+                            aspects of your organisation's digital footprint.
+                        </p>
+                        <p> We map your digital footprint and then analyse for weaknesses with automated vulnerability
+                            tools. These identify:</p>
+                        <ul class="list-stuff">
+                            <li>Known Software Vulnerabilities (unpatched or unsupported software)</li>
+                            <li>Insecure configuration within Networks and Systems (poor default security or simply user
+                                error)
+                            </li>
+                            <li>Default or weak passwords (a top access vector for attackers)</li>
+                            <li>Web Application Vulnerabilities such as SQL injection (SQLi) and Cross Site Scripting
+                                (XSS)
+                            </li>
+                            <li>Information Leaks (revealing too much configuration or other information can open doors
+                                for attackers)<br><br></li>
+                        </ul>
+                        <p>These tools identify the low hanging fruit that attackers leverage to breach your security.
+                            <strong>This is not a penetration test. For most organisations, penetration testing should
+                                not even be considered until a vulnerability assessment has been performed and
+                                remediation undertaken.</strong></p>
+                        <p>
+                            Once we have a digital footprint Open Source Intelligence gathering is then used to
+                            identify:
+                        </p>
+                        <ul class="list-stuff">
+                            <li>Document Leaks - documents revealing information about the company, business processes,
+                                contracts or structure; Usually documents inadvertently stored unprotected online
+                            </li>
+                            <li>Breached Credentials & Email addresses; emails of employees and passwords where
+                                available, either publicly or from paid databases available on the dark and deep net;
+                            </li>
+                            <li>Personally identifiable information; personal information of customers, vendors,
+                                partners, staff & senior management leaked online;
+                            </li>
+                            <li>Social Media; fake and unauthorised social media accounts related to the company or any
+                                of its key partners that could cause brand damage or risk.
+                            </li>
+                            <li>Digital Housekeeping; old websites, pages, accounts and other such assets that require
+                                decommissioning
+                            </li>
+                        </ul>
+                        <br><br>
+                        <p><strong>This is an intensive report that uncovers every aspect of your organisation that can
+                            be used in an attack against you.
+                            The full threat assessment requires many hours of meticulous human investigation to detect
+                            vulnerabilities and document leaks that automated tools are not able to detect.</strong>
+                        </p>
+                        <p>This is priced with reference to the scale of your organisation and the scope of work
+                            required.</p>
+                    </div>
+                    <h3>Third Party Assessments</h3>
+                    <p>Comprehensive assessments can be conducted on third parties using Open Source Intelligence
+                        techniques. A thorough investigation by our Intelligence specialists will gather all data
+                        publicly available on a target. </p>
+                    <p>A full digital footprint is provided that covers every aspect of their online presence. Document
+                        leaks and credential breaches are identified and reported on.</p>
+                    <p><strong>Please note: for third party analysis we cannot provide the source material that contains
+                        sensitive data. We are unable to conduct vulnerability scanning on third party assets.</strong>
+                    </p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <!-- #component:public/threat-assessment:end -->
+            {% include "public/_security_ratings_sidebar.html" %}
+        </div>
+    </div>
+</div>
+{% endblock page_content %}

@@ -1,0 +1,65 @@
+{% extends "public/base.html" %}
+{% load static %}
+ {% block page_content %}
+
+
+<!--Page Title-->
+<section class="page-title">
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Get in Touch</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Get in Touch</li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--  Page Container -->
+  <section class="why-choose-us">
+        <div class="auto-container">
+            <div class="row">
+                <div class="content-column col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="icon-layer wow slideInLeft animated" style="visibility: visible; animation-name: slideInLeft;"></div>
+                        <div class="sec-title">
+                            <span class="title">Cyber Security Ratings</span>
+                            <h2 class="mb-3">RiskRate.Me</h2>
+
+                            <p class="mb-3">We are committed to providing effective, affordable cyber security solutions tailored to your needs. </p>
+
+                            <p class="mb-3">We are passionate about assisting small and mid sized organsiations in understanding and implementing security standards. We endeavour to make it as simple as possible to achieve a base line standard of security and can help you every step of the way.</p>
+                            <p class="mb-3">Please don't hesitate to contact us if you have any questions at all regarding our services or would like to enquire about Enterprise account pricing.</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="form-column col-lg-8 col-md-12 col-sm-12">
+
+
+
+                    <div class="inner-column wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="request-form">
+                            <div class="upper-box">
+                                <h3>Have any questions? Drop us a line.</h3>
+                                <div class="text">Want to chat? Request a call to discuss your situation with our experts.  </div>
+                            </div>
+                            {% include "./public/_contact_form.html" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <br><br>
+   {% endblock page_content %}

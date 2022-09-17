@@ -1,0 +1,25 @@
+{% load static %}
+<!-- Contact -->
+<section id="contact" class="call-to-action"
+   style="background-image:url({% static 'images/background/2.jpg' %});">
+    <div class="auto-container">
+        <div class="row">
+            <div class="content-column col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <span class="icon" style="color:#f78105"><i class="mdi mdi-comment-multiple-outline"></i></span>
+                    <div class="text">Find out how we can help you</div>
+                    <h2>Drop us a line and we'll get right back</h2>
+                </div>
+            </div>
+            <div class="form-column col-xl-8 col-lg-12 col-md-12 col-sm-12 wow fadeInRight animated"
+                 style="visibility: visible; animation-name: fadeInRight;">
+                <div class="inner-column">
+                    <div class="appointment-form">
+                        {% include "./_contact_form.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact -->

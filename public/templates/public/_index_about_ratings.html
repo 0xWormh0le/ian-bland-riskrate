@@ -1,0 +1,32 @@
+{% load static %}
+<section class="fluid-section-two">
+        <div class="outer-container clearfix">
+            <!--Image Column-->
+            <div class="image-column" style="background-image:url({% static 'images/image-5.jpg' %});">
+                <figure class="image-box"><img src="{% static 'images/image-5.jpg' %}" alt=""></figure>
+                <div class="message-box wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
+                    <div class="inner">
+                        <div class="text text-white text-center">Ratings display a commitment to privacy, accountability and trustworthiness.</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-column">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <span class="title">privacy, accountability and trustworthiness</span>
+                        <h2>What Are Cyber Security &amp; Digital Trust Ratings?</h2>
+                    </div>
+                        <div>
+
+						<p><span style="color:#398bf5">Ratings are compiled from non-intrusive scans, open source intelligence and externally available data. They provide an outside-in or "hacker's" eye view of an organisation. They quantify the public security posture of any organisation with an online presence.</span></p><br><p>We evauluate the implementation of a number of crucial open security standards that ensures the <strong>integrity, authenticity and confidentiality</strong> of internet delivered data and communications. </p><br><p>When woven together compliance to these standards increases security and trust on the Internet: users can reliably ascertain where they are going, who they are interacting with, and how confidential their interactions are. </p><br>
+                         <p>This is combined with open source intelligence and data from numerous security intelligence feeds, intrusion detection feeds and a system of automated bots, crawlers and honeypots which continuously collect data from across the Internet.</p>
+                            <div class="btn-box text-center">
+                                <a href="{% url 'account_signup' %}" class="theme-btn btn-style-five text-white" style="margin-top:50px;">Find out your rating</a>
+                            </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>

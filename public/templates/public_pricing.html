@@ -1,0 +1,109 @@
+{% extends "public/base.html" %}
+ {% load static %}
+ {% block page_content %}
+<!--Page Title-->
+<section class="page-title" >
+    <div class="container">
+        <div class="inner-container clearfix">
+            <h1>Pricing Plans</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Our Pricing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+
+<!-- Pricing Section -->
+<section class="pricing-section style-two">
+    <div class="auto-container">
+        <div class="row no-gutters">
+            <div class="col-lg-4">
+                <div class="sec-title-two mr-3 mt-5">
+                    <span class="title">Cyber Security & Digital Trust Report</span>
+                    <h5 class="mb-3">Sign up now to protect the security and privacy of your customers, partners,
+                        vendors and your own organisation.</h5>
+
+                    <p class="mb-3">- The average cost of a successful spear phishing attack is <strong>US$1.6
+                        million.</strong> Yet the majority of organisations have not fully implemented readily available
+                        email authentication solutions. </p>
+                    <p class="mb-3">- 63% of cyber breaches originate from compromised third parties as vulnerable
+                        digital assets are used maliciously against others. </p>
+                    <p class="mb-3">- More than half of websites do not protect visitors privacy and protect them from
+                        common vulnerabilities. </p>
+                    <p class="mb-3"><strong>Get your report now! </strong></p>
+                </div>
+
+            </div>
+
+
+            <!-- Pricing Table -->
+            <div class="pricing-table style-two tagged col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                <div class="inner-box">
+                    <div class="corner-ribbon top-left orange shadow  wow fadeIn animated" id="free">Great Value</div>
+                    <div class="title">Individual Report</div>
+                    <div class="price">$149 <span>per Year</span></div>
+                    <div class="table-content">
+                        <ul>
+                            <li>Security & Trust Rating</li>
+                            <li>Detailed Report</li>
+                            <li>12 Months Monitoring</li>
+                            <li>Monthly Updates & Alerts</li>
+                            <li>Remediation Guidelines</li>
+                            <li>Cyber Security Starter Pack</li>
+                            <li> -</li>
+
+                        </ul>
+                    </div>
+                    <div class="table-footer">
+                        <a href="{% url 'account_signup' %}" class="theme-btn" style="color:#fff;">SIGN UP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Table -->
+            <div class="pricing-table style-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                <div class="inner-box">
+
+                    <div class="title">Enterprise Plan</div>
+                    <div class="price">$500 <span>(from) per Year</span></div>
+                    <div class="table-content">
+                        <ul>
+                            <li>Security & Trust Rating</li>
+                            <li>Monthly Updates & Alerts</li>
+                            <li>Detailed Report</li>
+                            <li>Remediation Guidelines</li>
+                            <li>Cyber Security Resources</li>
+                            <li>Third Party Ratings & Reports</li>
+                            <li>Third Party Resource Access</li>
+                        </ul>
+                    </div>
+                    <div class="table-footer">
+                        <a href="{% url 'contact' %}" class="theme-btn">FIND OUT MORE</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- End Pricing Section -->
+
+
+<!-- Call to action cyber sec -->
+<section class="call-to-action-four" style="background-image:url(/static/images/background/9.jpg);">
+    <div class="auto-container">
+        <div class="content-box">
+            <div class="title">Are you implementing Cyber Security Compliance controls? We can help</div>
+            <h2>Our Cyber Security Starter pack makes it easy for SMEs <br>to go from zero to cyber security hero!</h2>
+
+        </div>
+    </div>
+</section>
+<!-- End Call to action cyber sec -->
+
+
+{% endblock page_content %}

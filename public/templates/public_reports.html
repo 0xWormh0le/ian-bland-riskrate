@@ -1,0 +1,197 @@
+{% extends "public/base.html" %}
+{% load static %}
+
+{% block page_content %}
+<section class="page-title" >
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <h1>Remediation Reports</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about-ratings' %}">Security & Trust Ratings</a></li>
+                <li>Remediation Reports</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sidebar Page Container -->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row">
+           <div class="content-side order-2 col-lg-8 col-md-12 col-sm-12">
+                <div class="service-detail">
+                    <div class="content-box" style="padding-top:0">
+                        <h2>Remediation Reports</h2>
+                        <p>
+                            <strong>
+                                Making security, clear, straightforward and effective for organisations of all sizes.
+                            </strong>
+                        </p>
+                        <p>
+                            A full Cyber Security &amp; Digital Trust Report will give you an easy to understand breakdown of
+                            your rating and how it can impact your organisation. Full remediation recommendations are
+                            provided, allowing you to immediately rectify any vulnerabilities.
+                        </p>
+                        <p>
+                            Enterprise Plan customers can provide remediation reports to their third parties enhancing
+                            the security of their digital ecosystem.
+                        </p>
+                        <p>
+                            Remediation recommendations are broken down into easy to follow categories and backed with a
+                            library of cyber security resources to make them actionable for even small organisations
+                            with limited IT resources.
+                        </p>
+                    </div>
+
+
+                    <div class="service-benefits">
+                        <div class="row">
+                            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                                <h3>Report Overview</h3>
+                                <p>
+                                    At first glance our reports provides a clear easy to understand general overview of a
+                                    rating. You can immediately see your rating and risk profile. Any category of your
+                                    digital presence in which you might be at risk is clearly identified.
+                                </p>
+
+                                <p>You can then drill down into each of the main categories for a full explanation
+                                    of the impact they might have on your organisation and from here view each of the
+                                     sub-categories in a simple to use, clear and logical interface.</p>
+
+                                <p>Expandable sub-categry sections provide data on each of the test performed and the
+                                    associated results. Quickly and efficiently you can identify any organisational weak
+                                    spots and access remediation recommendations.</p>
+                            </div>
+                            <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/remediation-report.png' %}"
+                                                               alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="service-benefits">
+                        <div class="row" style="padding-top:30px;">
+
+                            <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/consolidated-view.png' %}"
+                                                               alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                                <h3>Consolidated View</h3>
+                                <p>The consolidated view of the Enterprise Plan allows you to view the results of each
+                                    tracked organisation. An average overall rating, average scores for each category
+                                    and rating distribution are provided. </p>
+                                <p>You can view all of your tracked organisations or subsets of them based on sectors,
+                                    system categories or your own custom tags. In each view you can export results (CSV,
+                                    Excel & PDF) and filter organisations according to their overall and category
+                                    ratings.</p>
+                                <p>Quickly and clearly you can identify organisations based on their risk profile. In
+                                    each instance you have access to the full report view of an organisation.</p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="service-benefits">
+                        <div class="row">
+                            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                                <h3>Report Data View</h3>
+                                <p>The data view provides the complete data set of the rating findings for a specific
+                                    organisation. These can be exported in a number of formats, CSV, Excel, PDF or
+                                    simply printed. </p>
+                                <p>Each data category item links to the relevant section in our resource library to give
+                                    you a full understanding of the relevance of the data and how to ensure compliance
+                                    for each standard.</p>
+
+
+                            </div>
+                            <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/data-view.png' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Working Strategies -->
+                    <div class="working-strategies" style="padding-top:30px;">
+                        <h3>Effective Strategies for Enhanced Security</h3>
+
+                        <p style="color:#398bf5">Compliance to accepted security standards is the most cost-effective
+                            and beneficial strategy an organisation can undertake to minimise cyber risk and promote
+                            digital trust.</p>
+                        <p>By implementing industry accepted standards, your organisation, small or large, will offer a
+                            higher degree of online security and publicly display its commitment to privacy,
+                            accountability and trustworthiness.</p>
+                        <p>A full Cyber Security & Digital Trust Report is exceptional value and could save your
+                            organisation thousands, even millions in cyber security damages. Sign up for your report
+                            today!</p>
+
+                    </div>
+
+                   <!-- Service FAQ's -->
+                        <div class="service-faqs">
+                            <h3>Service FAQ’s</h3>
+                            <ul class="accordion-box">
+                                <!--Block-->
+
+
+                                <!--Block-->
+                                <li class="accordion block active-block">
+                                    <div class="acc-btn active">How will this report help us?<div class="icon flaticon-add-1"></div></div>
+                                    <div class="acc-content current">
+                                        <div class="content">
+                                            <div class="text">
+                                            <p>This report identifies compliance to key industry accepted security standards that impact the cyber security of your digital assets. Implementation of these standards specifically helps to mitigate cyber security risk and promote digital trust on the internet. With a low rating your organisation is not only putting itself at risk but also other in your digital eco-system.</p>
+
+                                            <p>A full report will provide everything you need to remediate any issues and enhance your cyber security profile. With the average cost of a successful phishing attack at US$1.4 million it provides exceptional value at reducing your risk  exposure to these and other internet based attacks.</p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block ">
+                                    <div class="acc-btn ">How much does it cost for a full Report? <div class="icon flaticon-add-1"></div></div>
+                                    <div class="acc-content ">
+                                        <div class="content">
+                                            <div class="text">It is only US$149 for an annual subscription - this includes a full 12 months of monitoring of your domain, full remediation recommendations AND access to the cyber security starter pack. This provides everything you might need for a Cyber Security initiative or to ensure compliance as part of a supply chain requirements.</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--Block-->
+                                <li class="accordion block">
+                                    <div class="acc-btn">Who else can access my rating? <div class="icon flaticon-add-1"></div></div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">Enterprise clients can access your rating. Typically such ratings are used for Vendor Risk Management and Cyber Insurance risk assessments. </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+
+            {% include "public/_security_ratings_sidebar.html" %}
+        </div>
+    </div>
+</div>
+<!--End Sidebar Page Container -->
+
+{% endblock page_content %}
